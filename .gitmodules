@@ -6,3 +6,6 @@
 	path = aliases
 	url = git@github.com:ahmadassaf/gaudi-bash-aliases
 	branch = master
+[submodule "completions"]
+	path = completions
+	url = git@github.com:ahmadassaf/gaudi-bash-completions
