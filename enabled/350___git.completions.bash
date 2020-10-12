@@ -1,0 +1,1 @@
+/Users/ahmadassaf/.bash_it/components/completions/git.completions.bash
