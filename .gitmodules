@@ -1,0 +1,12 @@
+[submodule "completions"]
+	path = completions
+	url = git@github.com:ahmadassaf/gaudi-bash-completions
+	branch = master
+[submodule "plugins"]
+	path = plugins
+	url = git@github.com:ahmadassaf/gaudi-bash-plugins
+	branch = master
+[submodule "aliases"]
+	path = aliases
+	url = git@github.com:ahmadassaf/gaudi-bash-aliases
+	branch = master
