@@ -1,1 +1,0 @@
-/Users/ahmadassaf/.bash_it/components/plugins/base.plugins.bash
