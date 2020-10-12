@@ -1,9 +1,0 @@
-[submodule "aliases"]
-	path = aliases
-	url = https://github.com/ahmadassaf/gaudi-bash-aliases
-[submodule "plugins"]
-	path = plugins
-	url = https://github.com/ahmadassaf/gaudi-bash-plugins
-[submodule "completions"]
-	path = completions
-	url = https://github.com/ahmadassaf/gaudi-bash-completions
