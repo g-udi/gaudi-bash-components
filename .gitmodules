@@ -9,3 +9,4 @@
 [submodule "completions"]
 	path = completions
 	url = git@github.com:ahmadassaf/gaudi-bash-completions
+	branch = master
