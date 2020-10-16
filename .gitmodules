@@ -10,3 +10,6 @@
 	path = completions
 	url = git@github.com:ahmadassaf/gaudi-bash-completions
 	branch = master
+[submodule "themes"]
+	path = themes
+	url = git@github.com:ahmadassaf/gaudi-bash-themes
