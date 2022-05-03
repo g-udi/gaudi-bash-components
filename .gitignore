@@ -1,1 +1,17 @@
+# Editors specific files
+.atom-build.json
+.idea
+*.sublime-workspace
+*.sublime-project
+.vscode
+
+# gaudi-bash enabled items and custom and temporary files
 enabled/
+
+# OS specific files (mainly OSX)
+.DS_Store
+
+# Misc. dotfiles
+.rvmrc
+*.swp
+.*.un~
