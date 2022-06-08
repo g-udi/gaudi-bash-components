@@ -1,15 +1,15 @@
 [submodule "plugins"]
 	path = plugins
-	url = git@github.com:ahmadassaf/gaudi-bash-plugins
+	url = https://github.com/ahmadassaf/gaudi-bash-plugins
 	branch = master
 [submodule "aliases"]
 	path = aliases
-	url = git@github.com:ahmadassaf/gaudi-bash-aliases
+	url = https://github.com/ahmadassaf/gaudi-bash-aliases
 	branch = master
 [submodule "completions"]
 	path = completions
-	url = git@github.com:ahmadassaf/gaudi-bash-completions
+	url = https://github.com/ahmadassaf/gaudi-bash-completions
 	branch = master
 [submodule "themes"]
 	path = themes
-	url = git@github.com:ahmadassaf/gaudi-bash-themes
+	url = https://github.com/ahmadassaf/gaudi-bash-themes
