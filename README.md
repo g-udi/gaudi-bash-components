@@ -1,4 +1,4 @@
-# gaudi-bash plugins
+# gaudi-bash components
 
 This repo contains a housefor [gaudi-bash](https://github.com/g-udi/gaudi-bash) components which are [aliases](https://github.com/g-udi/gaudi-bash-aliases), [plugins](https://github.com/g-udi/gaudi-bash-plugins), [completions](https://github.com/g-udi/gaudi-bash-completions) and [themes](https://github.com/g-udi/gaudi-bash-themes/).
 
