@@ -1,0 +1,186 @@
+# gaudi-bash plugins
+
+This repo contains a housefor [gaudi-bash](https://github.com/g-udi/gaudi-bash) components which are [aliases](https://github.com/g-udi/gaudi-bash-aliases), [plugins](https://github.com/g-udi/gaudi-bash-plugins), [completions](https://github.com/g-udi/gaudi-bash-completions) and [themes](https://github.com/g-udi/gaudi-bash-themes/).
+
+The components can make use of the [helper functions](https://github.com/g-udi/gaudi-bash/blob/master/lib/helpers/utils.bash) of gaudi-bash:
+- `_is_function`: check if the passed parameter is a function
+- `_command_exists`: check if the command passed as the argument exists
+- `_completion_exists`: check if the completion function passed as the argument exists
+- `_binary_exists`: check if the binary passed as the argument exists
+- `_read_input`: reads input from the prompt for a yes/no (one character) input
+- `_array-contains`: searches an array for an exact match against the term passed as the first argument to the function. The function exits as soon as a match is found
+- `_array-dedupe`: creates a concatenated array of unique and sorted elements
+- `_clean-string`: cleans a string from whitespace given a passed cleaning mode
+
+## Plugins
+
+- [**alias-completion**](/lib/alias-completion.plugins.bash): Automatic completion of aliases
+- [**atuin**](/lib/atuin.bash): Load Atuin! The magical shell history via ble.sh
+- [**autojump**](/lib/autojump.plugins.bash): Autojump configuration
+- [**aws**](/lib/aws.plugins.bash): AWS helper functions
+- [**base**](/lib/base.plugins.bash): Miscellaneous tools
+- [**blesh**](/lib/blesh.plugins.bash): load ble.sh, the Bash line editor!
+- [**boot2docker**](/lib/boot2docker.plugins.bash): Helpers to get Docker setup correctly for boot2docker
+- [**cht-sh**](/lib/cht-sh.plugins.bash): Simplify `curl cht.sh/<query>` to `cht.sh <query>`
+- [**brew**](/lib/brew.bash): Make sure that brew is accessible and exported properly in your shell
+- [**chruby**](/lib/chruby.plugins.bash): Load chruby from `/usr/local/share/chruby`
+- [**compress**](/lib/compress.plugins.bash): Compression tools
+- [**direnv**](/lib/direnv.plugins.bash): Load [direnv](https://direnv.net/)
+- [**dirs**](/lib/dirs.plugins.bash): Directory stack navigation
+- [**docker-compose**](/lib/docker-compose.plugins.bash): Helper functions for using docker-compose
+- [**docker**](/lib/docker.plugins.bash): Helpers to more easily work with Docker
+- [**edit-mode-emacs**](/lib/edit-mode-emacs.plugins.bash): Enable emacs editing mode
+- [**edit-mode-vi**](/lib/edit-mode-vi.plugins.bash): Enable vi editing mode
+- [**encode**](/lib/encode.plugins.bash): Encoding and decoding functions
+- [**explain**](/lib/explain.plugins.bash): mankier.com explain function to explain other commands
+- [**extract**](/lib/extract.plugins.bash): Extractor helper functions for various archive types
+- [**fzf**](/lib/fzf.plugins.bash): Load fzf, a Command-line fuzzy finder written in Go
+- [**gif**](/lib/gif.plugins.bash): Video to gif, gif to WebM helper functions
+- [**git-subrepo**](/lib/git-subrepo.plugins.bash): Loads Git Submodule Alternative via git-subrepo and initialize completions
+- [**git**](/lib/git.plugins.bash): Git helper functions
+- [**gitstatus**](/lib/gitstatus.plugins.bash): Speeds up your life by using gitstatus for [git status](https://github.com/romkatv/gitstatus) calculations
+- [**go**](/lib/go.plugins.bash): Go environment variables & path configuration
+- [**goenv**](/lib/goenv.plugins.bash): Load Go version management via goenv
+- [**gradle**](/lib/gradle.plugins.bash): Add a gw command to use gradle wrapper if present, else use system gradle
+- [**hg**](/lib/hg.plugins.bash): Mercurial helper functions
+- [**history**](/lib/history.plugins.bash): history manipulation
+- [**hub**](/lib/hub.plugins.bash): Load GitHub support to git on the command-line via hub
+- [**java**](/lib/java.plugins.bash): Java and JAR helper functions
+- [**jekyll**](/lib/jekyll.plugins.bash): Manage your jekyll site
+- [**jenv**](/lib/jenv.plugins.bash): Manage your Java environment via jenv
+- [**jgitflow**](/lib/jgitflow.plugins.bash): Maven jgitflow build helpers
+- [**json**](/lib/json.plugins.bash): Syntax-highlight JSON strings or files
+- [**jump**](/lib/jump.plugins.bash): Initialize [jump](https://github.com/gsamokovarov/jump). Add `export JUMP_OPTS=("--bind=z")` to change keybinding
+- [**latex**](/lib/latex.plugins.bash): Add mactex to the path if its present
+- [**man**](/lib/man.plugins.bash): Colorize man pages for better readability
+- [**nginx**](/lib/nginx.plugins.bash): Manage your nginx service
+- [**node**](/lib/node.plugins.bash): Node.js helper functions
+- [**nodenv**](/lib/nodenv.plugins.bash): Load nodenv | Node.js virtual environment builder
+- [**nvm**](/lib/nvm.plugins.bash): Node version manager configuration
+- [**osx**](/lib/osx.plugins.bash): OSX specific functions
+- [**pack**](/lib/pack.plugins.bash): CNB pack cli aliases
+- [**percol**](/lib/percol.plugins.bash): Search & Select history with percol
+- [**pipx**](/lib/pipx.plugins.bash): Install and Run Python Applications in Isolated Environments
+- [**postgres**](/lib/postgres.plugins.bash): Postgres helper functions
+- [**powerline**](/lib/powerline.plugins.bash): Enables powerline daemon
+- [**proxy**](/lib/proxy.plugins.bash): Proxy Tools
+- [**pyenv**](/lib/pyenv.plugins.bash): Python version management via pyenv
+- [**pygmentize**](/lib/pygmentize.plugins.bash):.plugins.bash pygmentize instead of cat to terminal if possible
+- [**rails**](/lib/rails.plugins.bash): Helper functions for Ruby on Rails
+- [**rbenv**](/lib/rbenv.plugins.bash): Ruby Version Manager via rbenv
+- [**ruby**](/lib/ruby.plugins.bash): Ruby and rubygems specific functions and settings
+- [**rvm**](/lib/rvm.plugins.bash): Ruby Version Manager (RVM)
+- [**sdkman**](/lib/sdkman.plugins.bash): Load Software Development Kit Manager
+- [**server**](/lib/server.plugins.bash): Create Simple HTTP Server
+- [**ssh**](/lib/ssh.plugins.bash): SSH helper functions
+- [**sshagent**](/lib/sshagent.plugins.bash): SSH Agent helper functions
+- [**subversion**](/lib/subversion.plugins.bash): SVN helper functions
+- [**thefuck**](/lib/thefuck.plugins.bash): Initialization for fuck
+- [**tmux**](/lib/tmux.plugins.bash): Make sure that tmux is launched in 256 color mode
+- [**tmuxinator**](/lib/tmuxinator.plugins.bash): Sources tmuxinator script if available
+- [**xterm**](/lib/xterm.plugins.bash): Automatically set your xterm title with host and location info
+- [**zoxide**](/lib/zoxide.plugins.bash): Zoxide is a smarter cd command for your shell.
+
+## Completions
+
+-**[asdf](/lib/asdf.completions.bash)**: asdf completions | The multiple runtime version manager
+-**[awscli](/lib/awscli.completions.bash)**: AWS CLI completions
+-**[brew](/lib/brew.completions.bash)**: Brew completions
+-**[bundler](/lib/bundler.completions.bash)**: Bash completion for the `bundle` command
+-**[capistrano](/lib/capistrano.completions.bash)**: Bash completion support for Capistrano
+-**[cargo](/lib/cargo.completions.bash)**: Cargo (Rust package manager) completion
+-**[composer](/lib/composer.completions.bash)**: Composer completion
+-**[conda](/lib/conda.completions.bash)**: Enable Conda completions
+-**[consul](/lib/consul.completions.bash)**: Consul bash completions
+-**[defaults](/lib/defaults.completions.bash)**: Bash command line completion for defaults
+-**[dirs](/lib/dirs.completions.bash)**: Bash completion support for the 'dirs' plugin (commands G, R).
+-**[docker-compose](/lib/docker-compose.completions.bash)**: Dokcer compose bash completions
+-**[docker-machine](/lib/docker-machine.completions.bash)**: Docker machine bash completions
+-**[docker](/lib/docker.completions.bash)**: Docker bash completions
+-**[export](/lib/export.completions.bash)**: Export bash completions
+-**[fabric](/lib/fabric.completions.bash)**: Fabric bash completions
+-**[flutter](/lib/flutter.completions.bash)**: Flutter bash completions
+-**[gaudi-bash](/lib/gaudi-bash.completions.bash)**: Gaudi bash completions
+-**[gcloud](/lib/gcloud.completions.bash)**: Google Cloud bash completions
+-**[gem](/lib/gem.completions.bash)**: Gem bash completions
+-**[git](/lib/git.completions.bash)**: Git bash completions
+-**[git_flow](/lib/git_flow.completions.bash)**: Gitflow bash completions
+-**[github-cli](/lib/github-cli.completions.bash)**: GitHub CLI completion
+-**[go](/lib/go.completions.bash)**: Go bash completions
+-**[gradle](/lib/gradle.completions.bash)**: Gradle bash completions
+-**[grunt](/lib/grunt.completions.bash)**: Grunt bash completions
+-**[gulp](/lib/gulp.completions.bash)**: Gulp bash completions
+-**[helm](/lib/helm.completions.bash)**: Helm (Kubernetes Package Manager) completions
+-**[homesick](/lib/homesick.completions.bash)**: Homesick bash completions
+-**[hub](/lib/hub.completions.bash)**: Hub bash completions. This script complements the completion script that ships with git
+-**[kubectl](/lib/kubectl.completions.bash)**: Kubectl (Kubernetes CLI) completion
+-**[lerna](/lib/lerna.completions.bash)**: Lerna bash completions
+-**[makefile](/lib/makefile.completions.bash)**: Makefile bash completions
+-**[maven](/lib/maven.completions.bash)**: Maven bash completions
+-**[minikube](/lib/minikube.completions.bash)**: Minikube (Local Kubernetes) completion
+-**[ngrok](/lib/ngrok.completions.bash)**: Ngrok bash completions
+-**[npm](/lib/npm.completions.bash)**: NPM (Node Package Manager) completion
+-**[nvm](/lib/nvm.completions.bash)**: NVM (Node Version Manager) bash completions
+-**[openshift](/lib/openshift.completions.bash)**: Openshift bash completions
+-**[packer](/lib/packer.completions.bash)**: Packer bash completions
+-**[pip](/lib/pip.completions.bash)**: Python pip package manager bash completions
+-**[pm2](/lib/pm2.completions.bash)**: PM2 bash completions
+-**[rabbitmq](/lib/rabbitmq.completions.bash)**: RabbitMQ bash completions
+-**[rake](/lib/rake.completions.bash)**: Bash completion support for Rake, Ruby Make
+-**[rustup](/lib/rustup.completions.bash)**: Rustup (Rust toolchain installer) completion
+-**[rvm](/lib/rvm.completions.bash)**: Bash completion support for RVM
+-**[sdkman](/lib/sdkman.completions.bash)**: Sdkman bash completions
+-**[sqlmap](/lib/sqlmap.completions.bash)**: SQL Map bash completions
+-**[ssh](/lib/ssh.completions.bash)**: Bash completion support for SSH
+-**[svn](/lib/svn.completions.bash)**: SVN bash completions
+-**[system](/lib/system.completions.bash)**: Loads the systems Bash completion modules
+-**[terraform](/lib/terraform.completions.bash)**: Terraform bash completions
+-**[tmux](/lib/tmux.completions.bash)**: Tmux bash completions
+-**[travis](/lib/travis.completions.bash)**: Travis bash completions
+-**[vagrant](/lib/vagrant.completions.bash)**: Vagrant bash completions
+-**[vault](/lib/vault.completions.bash)**: Vault bash completion
+-**[virsh](/lib/virsh.completions.bash)**: Bash completion for virsh - main CLI of libvirt borrowed from https://github.com/LuyaoHuang/virsh-bash-completion
+-**[virtualbox](/lib/virtualbox.completions.bash)**: Virtualbox completions
+-**[vuejs](/lib/vuejs.completions.bash)**: Vue.js completions
+-**[yarn](/lib/yarn.completions.bash)**: YARN CLI completions
+
+## Aliases
+
+- **[ag](/lib/ag.aliases.bash)**: The Silver Searcher (ag) aliases
+- **[ansible](/lib/ansible.aliases.bash)**: Ansible abbreviations
+- **[apt](/lib/apt.aliases.bash)**: apt and dpkg aliases for Ubuntu and Debian distros.
+- **[bundler](/lib/bundler.aliases.bash)**: Ruby Bundler
+- **[clipboard](/lib/clipboard.aliases.bash)**: pbcopy and pbpaste shortcuts to linux
+- **[composer](/lib/composer.aliases.bash)**: Common composer abbreviations
+- **[curl](/lib/curl.aliases.bash)**: Curl aliases for convenience.
+- **[docker](/lib/docker.aliases.bash)**-compose: docker-compose abbreviations
+- **[docker](/lib/docker.aliases.bash)**: Docker abbreviations/aliases
+- **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
+- **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
+- **[gaudi](/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
+- **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc. 
+- **[git](/lib/git.aliases.bash)**: Common git abbreviations
+- **[gitsvn](/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
+- **[gls](/lib/gls.aliases.bash)**: gls enhanced ls (port from Linux using coreutils)
+- **[heroku](/lib/heroku.aliases.bash)**: Heroku task abbreviations
+- **[hg](/lib/hg.aliases.bash)**: Mercurial abbreviations
+- **[homebrew](/lib/homebrew.aliases.bash)**: Homebrew abbreviations
+- **[homesick](/lib/homesick.aliases.bash)**: Homesick aliases
+- **[kubectl](/lib/kubectl.aliases.bash)**: kubectl aliases
+- **[ls](/lib/ls.aliases.bash)**: ls aliases to add coloring and extra arguments
+- **[maven](/lib/maven.aliases.bash)**: mMven abbreviations
+- **[node](/lib/node.aliases.bash)**: Node.js environment aliases
+- **[npm](/lib/npm.aliases.bash)**: Common npm abbreviations
+- **[osx](/lib/osx.aliases.bash)**: OSX specific aliases
+- **[puppet](/lib/puppet.aliases.bash)**: Puppet aliases
+- **[rails](/lib/rails.aliases.bash)**: Ruby Rails aliases
+- **[svn](/lib/svn.aliases.bash)**: Common svn aliases
+- **[systemd](/lib/systemd.aliases.bash)**: systemd service aliases
+- **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform and Terragrunt
+- **[textmate](/lib/textmate.aliases.bash)**: textmate aliases
+- **[tmux](/lib/tmux.aliases.bash)**: tmux terminal multiplexer aliases
+- **[uuidgen](/lib/uuidgen.aliases.bash)**: uuidgen aliases
+- **[vagrant](/lib/vagrant.aliases.bash)**: Vagrant aliases
+- **[vault](/lib/vault.aliases.bash)**: Vault aliases
+- **[vim](/lib/vim.aliases.bash)**: vim abbreviations
+- **[yarn](/lib/yarn.aliases.bash)**: Yarn package manager aliases
