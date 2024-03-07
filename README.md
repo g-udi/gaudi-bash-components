@@ -1,6 +1,6 @@
 # gaudi-bash components
 
-This repo contains a housefor [gaudi-bash](https://github.com/g-udi/gaudi-bash) components which are [aliases](https://github.com/g-udi/gaudi-bash-aliases), [plugins](https://github.com/g-udi/gaudi-bash-plugins), [completions](https://github.com/g-udi/gaudi-bash-completions) and [themes](https://github.com/g-udi/gaudi-bash-themes/).
+This repo contains a house for [gaudi-bash](https://github.com/g-udi/gaudi-bash) components which are [aliases](https://github.com/g-udi/gaudi-bash-aliases), [plugins](https://github.com/g-udi/gaudi-bash-plugins), [completions](https://github.com/g-udi/gaudi-bash-completions) and [themes](https://github.com/g-udi/gaudi-bash-themes/).
 
 The components can make use of the [helper functions](https://github.com/g-udi/gaudi-bash/blob/master/lib/helpers/utils.bash) of gaudi-bash:
 - `_is_function`: check if the passed parameter is a function
