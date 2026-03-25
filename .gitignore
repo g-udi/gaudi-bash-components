@@ -6,7 +6,8 @@
 .vscode
 
 # gaudi-bash enabled items and custom and temporary files
-enabled/
+enabled/*
+!enabled/.gitkeep
 
 # OS specific files (mainly OSX)
 .DS_Store
