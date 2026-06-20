@@ -22,7 +22,7 @@ The components can make use of the [helper functions](https://github.com/g-udi/g
 - [**basher**](plugins/lib/basher.plugins.bash): Initializes basher, the shell package manager
 - [**blesh**](plugins/lib/blesh.plugins.bash): load ble.sh, the Bash line editor!
 - [**boot2docker**](plugins/lib/boot2docker.plugins.bash): Helpers to get Docker setup correctly for boot2docker
-- [**brew**](plugins/lib/brew.plugins.bash): Make sure that brew is accessible and exported properly in your shell
+- [**brew**](plugins/lib/brew.plugins.bash): Load Homebrew shell environment and user-local binaries
 - [**bun**](plugins/lib/bun.plugins.bash): Configure Bun install directory and add Bun to PATH
 - [**cargo**](plugins/lib/cargo.plugins.bash): Configure Cargo install directory and add Cargo binaries to PATH
 - [**chruby**](plugins/lib/chruby.plugins.bash): Load chruby from `/usr/local/share/chruby`
@@ -57,7 +57,6 @@ The components can make use of the [helper functions](https://github.com/g-udi/g
 - [**json**](plugins/lib/json.plugins.bash): Syntax-highlight JSON strings or files
 - [**jump**](plugins/lib/jump.plugins.bash): Initialize [jump](https://github.com/gsamokovarov/jump). Add `export JUMP_OPTS=("--bind=z")` to change keybinding
 - [**latex**](plugins/lib/latex.plugins.bash): Add mactex to the path if its present
-- [**local-bin**](plugins/lib/local-bin.plugins.bash): Add user-local binaries to PATH
 - [**man**](plugins/lib/man.plugins.bash): Colorize man pages for better readability
 - [**nginx**](plugins/lib/nginx.plugins.bash): Manage your nginx service
 - [**node**](plugins/lib/node.plugins.bash): Node.js helper functions
