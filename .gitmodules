@@ -1,16 +1,16 @@
 [submodule "plugins"]
 	path = plugins
 	url = git@github.com:g-udi/gaudi-bash-plugins.git
-	branch = master
+	branch = main
 [submodule "aliases"]
 	path = aliases
 	url = git@github.com:g-udi/gaudi-bash-aliases.git
-	branch = master
+	branch = main
 [submodule "completions"]
 	path = completions
 	url = git@github.com:g-udi/gaudi-bash-completions.git
-	branch = master
+	branch = main
 [submodule "themes"]
 	path = themes
 	url = git@github.com:g-udi/gaudi-bash-themes.git
-	branch = master
+	branch = main
