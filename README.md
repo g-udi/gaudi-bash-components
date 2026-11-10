@@ -167,7 +167,7 @@ The components can make use of the [helper functions](https://github.com/g-udi/g
 - **[docker](aliases/lib/docker.aliases.bash)**: Docker abbreviations/aliases
 - **[emacs](aliases/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](aliases/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
-- **[gaudi](aliases/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
+- **[gaudi](aliases/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gbash command (these aliases are automatically included with the "general" aliases)
 - **[general](aliases/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc.
 - **[git](aliases/lib/git.aliases.bash)**: Common git abbreviations
 - **[gitsvn](aliases/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
