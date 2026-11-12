@@ -8,6 +8,7 @@
 # gaudi-bash enabled items and custom and temporary files
 enabled/*
 !enabled/.gitkeep
+custom/
 
 # OS specific files (mainly OSX)
 .DS_Store
